@@ -1,0 +1,66 @@
+{
+  "namespace": "creator_tools.optimization",
+  "$comment": "Optimization tools UI menu for Creator Tools",
+  "optimization_panel": {
+    "type": "panel",
+    "size": [320, 300],
+    "controls": {
+      "optimization_title": {
+        "type": "label",
+        "text": "Optimization Tools",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 10]
+      },
+      "particle_density_toggle": {
+        "type": "toggle",
+        "label": "Lower Particle Density",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 35]
+      },
+      "animation_tick_toggle": {
+        "type": "toggle",
+        "label": "Lower Animation Tick Rate",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 65]
+      },
+      "post_processing_toggle": {
+        "type": "toggle",
+        "label": "Disable Post-Processing",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 95]
+      },
+      "entity_rendering_toggle": {
+        "type": "toggle",
+        "label": "Simplify Entity Rendering",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 125]
+      },
+      "separator": {
+        "type": "label",
+        "text": "──────────────────────",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 155]
+      },
+      "low_impact_mode_toggle": {
+        "type": "toggle",
+        "label": "Low-Impact Mode (All)",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 175]
+      },
+      "performance_label": {
+        "type": "label",
+        "text": "Enables all optimizations\nfor maximum performance.",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 210]
+      }
+    }
+  }
+}

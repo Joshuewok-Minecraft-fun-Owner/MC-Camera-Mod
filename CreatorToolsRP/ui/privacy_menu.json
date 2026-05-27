@@ -1,0 +1,59 @@
+{
+  "namespace": "creator_tools.privacy",
+  "$comment": "Privacy tools UI menu for Creator Tools",
+  "privacy_panel": {
+    "type": "panel",
+    "size": [300, 280],
+    "controls": {
+      "privacy_title": {
+        "type": "label",
+        "text": "Privacy Settings",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 10]
+      },
+      "hide_server_ips_toggle": {
+        "type": "toggle",
+        "label": "Hide Server IPs",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 35]
+      },
+      "hide_chat_toggle": {
+        "type": "toggle",
+        "label": "Hide Chat",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 65]
+      },
+      "hide_player_names_toggle": {
+        "type": "toggle",
+        "label": "Hide Player Names",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 95]
+      },
+      "hide_hud_toggle": {
+        "type": "toggle",
+        "label": "Hide HUD",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 125]
+      },
+      "hide_coordinates_toggle": {
+        "type": "toggle",
+        "label": "Hide Coordinates",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 155]
+      },
+      "privacy_description": {
+        "type": "label",
+        "text": "These settings help protect\nyour privacy during streams\nand recordings.",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 190]
+      }
+    }
+  }
+}

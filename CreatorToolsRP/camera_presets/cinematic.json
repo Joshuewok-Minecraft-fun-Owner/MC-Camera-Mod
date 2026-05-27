@@ -1,0 +1,16 @@
+{
+  "name": "Cinematic",
+  "description": "Professional cinematic third-person view for smooth, cinematic footage",
+  "settings": {
+    "distance": 4,
+    "height": 1.5,
+    "sideOffset": 0,
+    "tilt": 15,
+    "fov": 70,
+    "smoothness": 0.95,
+    "enableMotionSmoothing": true,
+    "disableBob": true,
+    "disableSway": true,
+    "disableWobble": true
+  }
+}

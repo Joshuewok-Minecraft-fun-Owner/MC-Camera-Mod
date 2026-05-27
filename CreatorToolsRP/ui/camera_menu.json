@@ -1,0 +1,71 @@
+{
+  "namespace": "creator_tools.camera",
+  "$comment": "Camera preset UI menu for Creator Tools",
+  "camera_presets_panel": {
+    "type": "panel",
+    "size": [320, 200],
+    "controls": {
+      "camera_title": {
+        "type": "label",
+        "text": "Camera Presets",
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 10]
+      },
+      "preset_grid": {
+        "type": "grid",
+        "grid_dimensions": [5, 1],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "offset": [10, 25],
+        "size": [300, 50],
+        "collection_name": "presets",
+        "factory": {
+          "name": "preset_button",
+          "control_ids": ["preset_name"]
+        }
+      }
+    }
+  },
+  "preset_button": {
+    "type": "panel",
+    "size": [55, 50],
+    "controls": {
+      "preset_name": {
+        "type": "button",
+        "text": "Preset",
+        "size": [55, 50]
+      }
+    }
+  },
+  "camera_distance_slider": {
+    "type": "slider",
+    "min": 0,
+    "max": 15,
+    "value": 4,
+    "label": "Distance",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [10, 80]
+  },
+  "camera_height_slider": {
+    "type": "slider",
+    "min": -5,
+    "max": 10,
+    "value": 1.5,
+    "label": "Height",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [10, 110]
+  },
+  "camera_tilt_slider": {
+    "type": "slider",
+    "min": -90,
+    "max": 90,
+    "value": 0,
+    "label": "Tilt",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [10, 140]
+  }
+}

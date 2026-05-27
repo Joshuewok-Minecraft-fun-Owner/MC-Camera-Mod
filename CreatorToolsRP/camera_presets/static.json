@@ -1,0 +1,17 @@
+{
+  "name": "Static",
+  "description": "Fixed static camera position for stable, professional shots",
+  "settings": {
+    "distance": 0,
+    "height": 1.6,
+    "sideOffset": 0,
+    "tilt": 0,
+    "fov": 80,
+    "smoothness": 1.0,
+    "staticDistance": 6,
+    "enableMotionSmoothing": true,
+    "disableBob": true,
+    "disableSway": true,
+    "disableWobble": true
+  }
+}

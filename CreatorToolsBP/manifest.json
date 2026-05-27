@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Creator Tools - Advanced camera, privacy, and optimization features for Bedrock Edition",
+    "name": "Creator Tools (Behavior Pack)",
+    "version": [1, 0, 0],
+    "uuid": "12345678-1234-5678-1234-567812345601",
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "description": "Creator Tools Script API",
+      "version": [1, 0, 0],
+      "uuid": "12345678-1234-5678-1234-567812345611",
+      "language": "JavaScript",
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.8.0"
+    },
+    {
+      "module_name": "@minecraft/server-ui",
+      "version": "1.2.0"
+    }
+  ]
+}

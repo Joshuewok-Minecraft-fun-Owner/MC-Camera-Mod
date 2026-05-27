@@ -1,0 +1,16 @@
+{
+  "name": "Side",
+  "description": "Fixed side-view camera perfect for platforming and action sequences",
+  "settings": {
+    "distance": 5,
+    "height": 1.2,
+    "sideOffset": 3,
+    "tilt": 0,
+    "fov": 80,
+    "smoothness": 0.85,
+    "enableMotionSmoothing": true,
+    "disableBob": true,
+    "disableSway": true,
+    "disableWobble": true
+  }
+}

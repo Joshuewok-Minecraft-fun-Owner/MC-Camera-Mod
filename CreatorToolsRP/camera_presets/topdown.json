@@ -1,0 +1,16 @@
+{
+  "name": "Top-Down",
+  "description": "Bird's-eye view camera looking straight down at the player",
+  "settings": {
+    "distance": 0,
+    "height": 8,
+    "sideOffset": 0,
+    "tilt": 90,
+    "fov": 85,
+    "smoothness": 0.8,
+    "enableMotionSmoothing": true,
+    "disableBob": true,
+    "disableSway": true,
+    "disableWobble": true
+  }
+}
