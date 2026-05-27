@@ -130,13 +130,27 @@ Enable all optimizations at once for up to **80% performance gain estimate**.
 
 ## 📝 Installation
 
-### For Creators
+### 🟢 Easy Method (Recommended): .mcaddon File
 
-1. Download both packs:
+1. Download `CreatorTools.mcaddon` file
+2. Double-click to install (automatically imports both packs)
+3. Enable in world settings
+4. Open chat and use `!tools` to access the menu
+
+**Platform-Specific Instructions**:
+- **Windows**: Double-click `CreatorTools.mcaddon` → Minecraft opens automatically
+- **macOS/iOS**: Open `CreatorTools.mcaddon` with Minecraft app
+- **Android**: Use Files app → Long-press → Open with Minecraft
+
+---
+
+### 🔵 Manual Method: Folder Installation
+
+1. Download individual packs:
    - `CreatorToolsBP` (Behavior Pack)
    - `CreatorToolsRP` (Resource Pack)
 
-2. Move to Bedrock Edition pack folder:
+2. Move to Bedrock Edition pack folders:
    - **Windows**: `%appdata%\.minecraft\behavior_packs` and `resource_packs`
    - **macOS**: `~/Library/Application Support/minecraft/behavior_packs` and `resource_packs`
 

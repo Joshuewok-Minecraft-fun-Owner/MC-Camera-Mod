@@ -2,7 +2,21 @@
 
 ## Installation (2 minutes)
 
-### 1. Copy Packs to Minecraft
+### 🟢 Easy Method (Recommended): Use .mcaddon File
+
+1. **Download**: `CreatorTools.mcaddon` file
+2. **Install**: Double-click the file (Minecraft will import automatically)
+   - **Windows**: File will open in Minecraft
+   - **macOS/iOS**: Open with Minecraft
+   - **Android**: Use Files app → Open with Minecraft
+3. Done! Both packs are installed.
+
+---
+
+### 🔵 Manual Method: Copy Packs Folder
+
+If the .mcaddon method doesn't work, manually copy folders:
+
 Navigate to your Minecraft Bedrock pack folders:
 - **Windows**: `%appdata%\.minecraft\behavior_packs` and `resource_packs`
 - **macOS**: `~/Library/Application Support/minecraft/behavior_packs` and `resource_packs`

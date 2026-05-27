@@ -78,6 +78,13 @@ A **complete, production-ready Minecraft Bedrock Creator Tools Pack** containing
 ## 🚀 Getting Started
 
 ### Step 1: Installation (2 minutes)
+
+**Option A: Easy Method (.mcaddon file)**
+1. Download `CreatorTools.mcaddon`
+2. Double-click to install (or open with Minecraft)
+3. Enable in world settings
+
+**Option B: Manual Method (Folder Installation)**
 1. Copy `CreatorToolsBP` to your Minecraft `behavior_packs` folder
 2. Copy `CreatorToolsRP` to your Minecraft `resource_packs` folder
 3. Enable both packs in world settings (Behavior Pack first)

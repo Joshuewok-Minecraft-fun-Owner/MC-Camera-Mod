@@ -8,6 +8,12 @@
 
 ## 📁 Complete File Listing
 
+### Single-File Installation (Recommended)
+
+```
+📦 CreatorTools.mcaddon                                 [✅ Easy 1-click install]
+```
+
 ### Behavior Pack (CreatorToolsBP)
 
 ```
@@ -256,23 +262,33 @@ All requirements from the original specification have been implemented:
 
 ## 🚀 Deployment Instructions
 
-### Step 1: Locate Pack Folders
+### Easy Method: Use .mcaddon File ✨
+
+1. Download `CreatorTools.mcaddon` file
+2. Double-click to install (or open with Minecraft)
+3. Both packs are automatically installed!
+4. Enable in world settings
+5. Type `!tools` in chat
+
+### Manual Method: Folder Installation
+
+#### Step 1: Locate Pack Folders
 - **Windows**: `%appdata%\.minecraft\behavior_packs` and `resource_packs`
 - **macOS**: `~/Library/Application Support/minecraft/behavior_packs` and `resource_packs`
 - **Linux**: `~/.minecraft/behavior_packs` and `resource_packs`
 
-### Step 2: Copy Packs
+#### Step 2: Copy Packs
 1. Copy `CreatorToolsBP` folder to behavior_packs directory
 2. Copy `CreatorToolsRP` folder to resource_packs directory
 
-### Step 3: Enable in World
+#### Step 3: Enable in World
 1. Create or open a Minecraft Bedrock world
 2. Go to world settings
 3. Add pack: Select **CreatorToolsBP** first
 4. Add pack: Select **CreatorToolsRP** second
 5. Create world / Apply settings
 
-### Step 4: Use the Pack
+#### Step 4: Use the Pack
 1. Open chat and type `!tools`
 2. Navigate the menu to access camera, privacy, or optimization tools
 

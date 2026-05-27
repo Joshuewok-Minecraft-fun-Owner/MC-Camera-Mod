@@ -298,6 +298,7 @@
 
 ## 🚀 Deployment Checklist
 
+- ✅ `.mcaddon` file created for easy installation
 - ✅ Behavior Pack folder structure correct
 - ✅ Resource Pack folder structure correct
 - ✅ All files in correct locations
