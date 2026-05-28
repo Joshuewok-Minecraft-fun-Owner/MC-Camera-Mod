@@ -1,204 +1,136 @@
-# Creator Tools (Bedrock Edition)
+# 🎮 Creator Tools - Minecraft Mods
 
-A professional Minecraft Bedrock Creator Tools Pack featuring advanced camera systems, privacy tools, and optimization features built with the Script API (JavaScript).
+Professional camera, privacy, and optimization tools for **Bedrock** and **Java** editions.
 
-## 📦 Project Structure
+## 🚀 Quick Install
+
+### Bedrock Edition
+1. Download `CreatorTools.mcaddon`
+2. Double-click to install
+3. Enable in world settings
+4. Chat: `!tools`
+
+### Java Edition (Fabric)
+1. Install [Fabric Loader](https://fabricmc.net) for Minecraft 1.20.1
+2. Download and install [Fabric API](https://modrinth.com/mod/fabric-api)
+3. Download `CreatorTools-1.0.0.jar` and place in `mods/` folder
+4. Launch Minecraft and press **P** to open menu
+
+## 📦 What's Included
+
+- 🎥 **Camera System**: 5 presets + 9 adjustable sliders
+- 🛡️ **Privacy Tools**: Hide IPs, chat, names, HUD, coordinates
+- 🚀 **Optimization**: Lower particles, animations, post-processing (up to 80% FPS gain)
+- 🔄 **Auto-Update** (Java only): Automatic version checking with in-game notifications
+
+## 📋 Directory Structure
 
 ```
 Bedrock-Camera-Mod/
-├── CreatorToolsBP/                    # Behavior Pack
-│   ├── manifest.json                  # Pack manifest with dependencies
-│   └── scripts/
-│       ├── main.js                    # Main entry point & player management
-│       ├── camera.js                  # Camera preset & adjustment logic
-│       ├── privacy.js                 # Privacy toggle management
-│       ├── optimization.js            # Optimization feature management
-│       └── ui.js                      # UI form creation & handling
-│
-├── CreatorToolsRP/                    # Resource Pack
-│   ├── manifest.json                  # Pack manifest with dependencies
-│   ├── ui/
-│   │   ├── camera_menu.json           # Camera tools UI layout
-│   │   ├── privacy_menu.json          # Privacy tools UI layout
-│   │   └── optimization_menu.json     # Optimization tools UI layout
-│   │
-│   └── camera_presets/
-│       ├── cinematic.json             # Cinematic preset config
-│       ├── side.json                  # Side-view preset config
-│       ├── orbit.json                 # Orbit preset config
-│       ├── topdown.json               # Top-down preset config
-│       └── static.json                # Static preset config
-│
-└── README.md
+├── CreatorTools.mcaddon          ← Bedrock (Ready!)
+├── CreatorToolsBP/               ← Bedrock Behavior Pack
+├── CreatorToolsRP/               ← Bedrock Resource Pack
+├── CreatorToolsJava/             ← Java Fabric Mod
+│   ├── src/main/java/com/creatortools/
+│   ├── build.gradle
+│   └── README.md                 ← Java setup & auto-update guide
+├── .github/workflows/
+│   └── build-and-release.yml     ← Auto-publish on git tag
+└── README.md                     ← You are here!
 ```
-
-## 🎥 Camera System
-
-### 5 Professional Camera Presets
-
-1. **Cinematic** - Smooth third-person camera for professional cinematic footage
-   - Distance: 4 blocks | Height: 1.5 blocks | Tilt: 15° | FOV: 70° | Smoothness: 0.95
-
-2. **Side** - Fixed side-view perfect for platformers
-   - Distance: 5 blocks | Height: 1.2 blocks | Side Offset: 3 blocks | FOV: 80°
-
-3. **Orbit** - Dynamic orbiting camera
-   - Distance: 6 blocks | Height: 2 blocks | Orbit Speed: 2 units/sec | Tilt: 25°
-
-4. **Top-Down** - Bird's-eye view
-   - Height: 8 blocks | Tilt: 90° (straight down) | FOV: 85°
-
-5. **Static** - Fixed professional camera
-   - Static Distance: 6 blocks | Height: 1.6 blocks | No motion effects
-
-### Fully Adjustable Sliders
-
-- Camera Distance (0-15 blocks)
-- Camera Height (-5 to 10 blocks)
-- Side Offset (-5 to 5 blocks)
-- Camera Tilt (-90° to 90°)
-- Field of View (30° to 110°)
-- Smoothness (0.0-1.0)
-- Orbit Distance (3-20 blocks)
-- Orbit Rotation Speed (0.5-10 units/sec)
-- Static Distance (2-20 blocks)
-
-### Features
-
-- ✅ Preview mode to test settings before applying
-- ✅ Smooth cinematic third-person camera
-- ✅ No camera sway, bob, wobble, or motion sickness effects
-- ✅ Smooth interpolation between positions
-- ✅ All presets fully customizable via sliders
-- ✅ Camera reset to default option
-
-## 🛡️ Privacy Tools
-
-Toggle these privacy features in your custom UI:
-
-- **Hide Server IPs** - Prevent server IP addresses from appearing in chat
-- **Hide Chat** - Hide all chat messages from view
-- **Hide Player Names** - Obscure player names in nametags and chat
-- **Hide HUD** - Remove on-screen HUD elements
-- **Hide Coordinates** - Remove coordinate display
-
-**Use Cases:**
-- Stream/recording without exposing sensitive information
-- Clean footage for YouTube/Twitch
-- Protect privacy of players on your server
-
-## 🚀 Optimization Boost
-
-### Individual Optimization Features
-
-- **Lower Particle Density** - Reduce visual effects (~20% FPS gain)
-- **Lower Animation Tick Rate** - Reduce animation updates (~15% gain)
-- **Disable Post-Processing** - Remove bloom, motion blur (~25% gain)
-- **Simplify Entity Rendering** - Reduce entity complexity (~20% gain)
-
-### Low-Impact Mode
-
-Enable all optimizations at once for up to **80% performance gain estimate**.
-
-**Real-time Performance Impact Calculator** - See estimated FPS improvement percentage.
-
-## 🎮 User Interface
-
-### Main Menu with 3 Sections
-
-1. **🎥 Camera Tools**
-   - Quick-select buttons for all 5 presets
-   - Fine-tune individual settings
-   - Reset camera option
-
-2. **🛡️ Privacy Tools**
-   - 5 toggle switches for each privacy feature
-   - Easy enable/disable
-
-3. **🚀 Optimization**
-   - Individual optimization toggles
-   - Low-Impact Mode master toggle
-   - Real-time performance impact display
-
-### UI Features
-
-- Color-coded buttons and labels
-- Sliders with precise controls
-- Toggle switches for binary options
-- Descriptive labels and helpful text
-- Consistent navigation
-
-## 📝 Installation
-
-### 🟢 Easy Method (Recommended): .mcaddon File
-
-1. Download `CreatorTools.mcaddon` file
-2. Double-click to install (automatically imports both packs)
-3. Enable in world settings
-4. Open chat and use `!tools` to access the menu
-
-**Platform-Specific Instructions**:
-- **Windows**: Double-click `CreatorTools.mcaddon` → Minecraft opens automatically
-- **macOS/iOS**: Open `CreatorTools.mcaddon` with Minecraft app
-- **Android**: Use Files app → Long-press → Open with Minecraft
 
 ---
 
-### 🔵 Manual Method: Folder Installation
+## 🎥 Bedrock: Camera System
 
-1. Download individual packs:
-   - `CreatorToolsBP` (Behavior Pack)
-   - `CreatorToolsRP` (Resource Pack)
+### 5 Professional Presets
+- **Cinematic** - Smooth third-person (distance: 4, height: 1.5, FOV: 70°)
+- **Side** - Fixed side-view (distance: 5, height: 1.2, offset: 3)
+- **Orbit** - Dynamic orbiting camera (distance: 6, height: 2, speed: 2)
+- **Top-Down** - Bird's-eye view (height: 8, tilt: 90°)
+- **Static** - Fixed professional camera (distance: 6, height: 1.6)
 
-2. Move to Bedrock Edition pack folders:
-   - **Windows**: `%appdata%\.minecraft\behavior_packs` and `resource_packs`
-   - **macOS**: `~/Library/Application Support/minecraft/behavior_packs` and `resource_packs`
+### 9 Adjustable Sliders
+Distance • Height • Side Offset • Tilt • FOV • Smoothness • Orbit Distance • Orbit Speed • Static Distance
 
-3. Enable both packs in world settings (Behavior Pack first, then Resource Pack)
+### Features
+✅ Preview mode before applying  
+✅ Smooth cinematic motion (no sway/wobble)  
+✅ Per-player settings  
+✅ Quick preset buttons  
+✅ Camera reset option
 
-4. Open chat and use `!tools` to access the menu
+---
 
-## 🚀 Quick Start Commands
+## 🛡️ Bedrock: Privacy Tools
+
+Toggle these in the UI:
+- **Hide Server IPs** - Protect server information
+- **Hide Chat** - Clean recording footage
+- **Hide Player Names** - Privacy protection
+- **Hide HUD** - Professional screenshots
+- **Hide Coordinates** - Security toggle
+
+---
+
+## 🚀 Bedrock: Optimization
+
+Individual toggles for:
+- Lower particle density (~20% FPS)
+- Lower animation tick rate (~15% FPS)
+- Disable post-processing (~25% FPS)
+- Simplify entity rendering (~20% FPS)
+
+**Low-Impact Mode**: Master toggle enabling all (~80% FPS gain estimate)
+
+---
+
+## 📝 Bedrock: Commands
 
 ```
 !tools              # Open main menu
-!camera             # Open camera tools
-!privacy            # Open privacy settings
-!optimize           # Open optimization settings
-!preset cinematic   # Apply cinematic preset directly
-!preset side        # Apply side preset
-!preset orbit       # Apply orbit preset
-!preset topdown     # Apply top-down preset
-!preset static      # Apply static preset
+!camera             # Camera tools
+!privacy            # Privacy settings
+!optimize           # Optimization menu
+!preset cinematic   # Apply preset directly
+!preset side
+!preset orbit
+!preset topdown
+!preset static
 ```
 
-## 📊 Technical Details
+---
 
-**Behavior Pack UUID**: `12345678-1234-5678-1234-567812345601`
-**Resource Pack UUID**: `12345678-1234-5678-1234-567812345602`
-**Min Engine Version**: 1.20.0
+## 🎯 Java Edition (Fabric)
 
-**Dependencies**:
-- `@minecraft/server` v1.8.0+
-- `@minecraft/server-ui` v1.2.0+
+See [CreatorToolsJava/README.md](CreatorToolsJava/README.md) for:
+- Building from source
+- Installation steps
+- Auto-update system explained
+- Developer workflow
 
-## 📋 Feature Checklist
+---
 
-- ✅ 5 camera presets with full specifications
-- ✅ All adjustable sliders (9 total)
-- ✅ Preview button functionality
-- ✅ Smooth cinematic camera
-- ✅ 5 Privacy toggles
-- ✅ 4 Optimization features + Master toggle
-- ✅ Custom UI menu with tabs/sections
-- ✅ Per-player settings management
-- ✅ Dynamic UI updates
-- ✅ Complete folder structure
-- ✅ Proper manifests with UUIDs and dependencies
+## 📊 Project Stats
 
-## 📚 Documentation
+| Metric | Count |
+|--------|-------|
+| Total Features | 40+ |
+| Camera Presets | 5 |
+| Camera Sliders | 9 |
+| Privacy Toggles | 5 |
+| Optimization Features | 4 + Master |
+| Editions | 2 (Bedrock + Java) |
+| Code Lines | ~2,800 |
+| Auto-Update | ✅ Java Only |
 
-See [IMPLEMENTATION.md](IMPLEMENTATION.md) for detailed implementation notes and feature descriptions.
+---
+
+## 🎮 Distribution
+
+**Bedrock**: Ready to share immediately (`CreatorTools.mcaddon`)
+
+**Java**: Ready for Modrinth/CurseForge (GitHub Actions auto-publishes on git tag)
 
 ---
 

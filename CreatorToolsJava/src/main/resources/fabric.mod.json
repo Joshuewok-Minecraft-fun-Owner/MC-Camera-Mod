@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "creatortools",
+  "version": "${mod_version}",
+  "name": "Creator Tools",
+  "description": "Professional camera, privacy, and optimization tools for Minecraft Java Edition",
+  "authors": [
+    "Creator Tools Team"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Joshuewok-Minecraft-fun-Owner/Bedrock-Camera-Mod",
+    "sources": "https://github.com/Joshuewok-Minecraft-fun-Owner/Bedrock-Camera-Mod"
+  },
+  "license": "MIT",
+  "icon": "assets/creatortools/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.creatortools.CreatorToolsMod"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "minecraft": "1.20.1"
+  }
+}
