@@ -1,9 +1,9 @@
 package com.creatortools.update;
 
 import com.creatortools.CreatorToolsMod;
+import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import net.fabricmc.loader.api.FabricLoader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,7 +19,7 @@ import java.time.Duration;
  */
 public class UpdateChecker {
 	private static final Logger LOGGER = LoggerFactory.getLogger("CreatorToolsUpdater");
-	private static final String GITHUB_API_URL = "https://api.github.com/repos/Joshuewok-Minecraft-fun-Owner/Bedrock-Camera-Mod/releases/latest";
+	private static final String GITHUB_API_URL = "https://api.github.com/repos/Joshuewok-Minecraft-fun-Owner/MC-Camera-Mod/releases";
 	private static final String MOD_VERSION = CreatorToolsMod.MOD_VERSION;
 
 	private String latestVersion = null;
@@ -63,16 +63,30 @@ public class UpdateChecker {
 		HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
 
 		if (response.statusCode() == 200) {
-			JsonObject json = JsonParser.parseString(response.body()).getAsJsonObject();
-			String tagName = json.get("tag_name").getAsString().replace("v", "");
+			// Parse releases array and find the latest Java release
+			JsonArray releases = JsonParser.parseString(response.body()).getAsJsonArray();
 			
-			this.latestVersion = tagName;
-			this.downloadURL = json.get("html_url").getAsString();
+			for (int i = 0; i < releases.size(); i++) {
+				JsonObject release = releases.get(i).getAsJsonObject();
+				String tagName = release.get("tag_name").getAsString();
+				
+				// Only process Java releases
+				if (!tagName.contains("-java")) {
+					continue;
+				}
+				
+				// Extract version from tag (v1.0.1-java -> 1.0.1)
+				String version = tagName.replace("v", "").replace("-java", "");
+				
+				this.latestVersion = version;
+				this.downloadURL = release.get("html_url").getAsString();
 
-			if (isNewerVersion(tagName, MOD_VERSION)) {
-				this.updateAvailable = true;
-				LOGGER.info("Update available for Creator Tools: {} (current: {})", tagName, MOD_VERSION);
-				LOGGER.info("Download at: {}", this.downloadURL);
+				if (isNewerVersion(version, MOD_VERSION)) {
+					this.updateAvailable = true;
+					LOGGER.info("Update available for Creator Tools: {} (current: {})", version, MOD_VERSION);
+					LOGGER.info("Download at: {}", this.downloadURL);
+				}
+				break; // Found latest Java release, stop searching
 			}
 		}
 	}

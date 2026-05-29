@@ -17,7 +17,7 @@ import com.creatortools.ui.ScreenManager;
 
 public class CreatorToolsMod implements ClientModInitializer {
 	public static final String MOD_ID = "creatortools";
-	public static final String MOD_VERSION = "1.0.0";
+	public static final String MOD_VERSION = "1.0.1";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public static CameraManager cameraManager;
