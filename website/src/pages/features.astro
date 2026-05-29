@@ -1,0 +1,196 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Features" description="Explore all the amazing features of the Minecraft Camera Mod">
+  <section class="features-section">
+    <div class="container">
+      <h1>Features</h1>
+      <p class="intro-text">Discover what makes the Camera Mod the ultimate tool for Minecraft cinematography.</p>
+
+      <div class="features-list">
+        <!-- Feature 1 -->
+        <div class="feature-item">
+          <div class="feature-image">🎬</div>
+          <div class="feature-content">
+            <h2>Cinematic Camera Controls</h2>
+            <p>Professional-grade camera movements with smooth transitions. Control speed, acceleration, and easing for pixel-perfect cinematography.</p>
+            <ul class="feature-points">
+              <li>Smooth panning and orbiting</li>
+              <li>Adjustable movement speed</li>
+              <li>Customizable easing curves</li>
+              <li>Real-time preview</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-item">
+          <div class="feature-image">📐</div>
+          <div class="feature-content">
+            <h2>Pre-configured Presets</h2>
+            <p>Jump-start your cinematography with professionally designed camera presets. From static wide shots to dynamic orbit movements.</p>
+            <ul class="feature-points">
+              <li>Static - Fixed camera position</li>
+              <li>Cinematic - Smooth tracking shots</li>
+              <li>Orbit - 360° rotations</li>
+              <li>Side Profile - Perfect for showcasing builds</li>
+              <li>Top-Down - Aerial perspectives</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-item">
+          <div class="feature-image">🎨</div>
+          <div class="feature-content">
+            <h2>Intuitive UI</h2>
+            <p>Easy-to-use interface designed for both beginners and professionals. Access all camera controls with simple menus and hot keys.</p>
+            <ul class="feature-points">
+              <li>Clean, organized menu system</li>
+              <li>Customizable hotkeys</li>
+              <li>Real-time parameter adjustment</li>
+              <li>Preset quick-access buttons</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-item">
+          <div class="feature-image">⚙️</div>
+          <div class="feature-content">
+            <h2>Performance Optimization</h2>
+            <p>Built for performance. The mod is optimized to run smoothly without impacting your game's FPS or overall gameplay experience.</p>
+            <ul class="feature-points">
+              <li>Minimal performance impact</li>
+              <li>Efficient rendering pipeline</li>
+              <li>Configurable quality settings</li>
+              <li>Compatible with other mods</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-item">
+          <div class="feature-image">🔒</div>
+          <div class="feature-content">
+            <h2>Privacy & Open Source</h2>
+            <p>100% open source and privacy-focused. Your data is yours, and you control exactly what the mod does.</p>
+            <ul class="feature-points">
+              <li>No telemetry or tracking</li>
+              <li>Fully open source code</li>
+              <li>Community-driven development</li>
+              <li>Transparent updates</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-item">
+          <div class="feature-image">📱</div>
+          <div class="feature-content">
+            <h2>Cross-Edition Support</h2>
+            <p>Works on both Java and Bedrock editions of Minecraft. Take your cinematography skills anywhere.</p>
+            <ul class="feature-points">
+              <li>Java Edition support</li>
+              <li>Bedrock Edition support</li>
+              <li>Synchronized features</li>
+              <li>Consistent experience</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .features-section {
+      padding: var(--spacing-3xl) var(--spacing-md);
+    }
+
+    .features-section h1 {
+      text-align: center;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 1.125rem;
+      color: #64748b;
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .features-list {
+      display: grid;
+      gap: var(--spacing-3xl);
+    }
+
+    .feature-item {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: var(--spacing-2xl);
+      align-items: center;
+      padding: var(--spacing-2xl);
+      background: white;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .feature-item:hover {
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      transform: translateY(-2px);
+    }
+
+    .feature-image {
+      font-size: 5rem;
+      text-align: center;
+    }
+
+    .feature-content h2 {
+      color: var(--color-primary);
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .feature-content p {
+      margin-bottom: var(--spacing-lg);
+      color: #475569;
+      line-height: 1.8;
+    }
+
+    .feature-points {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-md);
+    }
+
+    .feature-points li {
+      display: flex;
+      align-items: center;
+      color: #64748b;
+    }
+
+    .feature-points li:before {
+      content: "✓";
+      color: var(--color-secondary);
+      font-weight: 700;
+      margin-right: var(--spacing-md);
+      font-size: 1.25rem;
+    }
+
+    @media (max-width: 768px) {
+      .feature-item {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-image {
+        font-size: 3rem;
+      }
+
+      .feature-points {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</Layout>

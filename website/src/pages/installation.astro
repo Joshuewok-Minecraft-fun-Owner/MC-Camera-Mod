@@ -1,0 +1,417 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Installation" description="Step-by-step guide to install the Minecraft Camera Mod">
+  <section class="installation-section">
+    <div class="container">
+      <h1>Installation Guide</h1>
+      <p class="intro-text">Choose your Minecraft edition and follow the steps below to get started.</p>
+
+      <div class="edition-tabs">
+        <button class="tab-button active" onclick="switchTab('java')">Java Edition</button>
+        <button class="tab-button" onclick="switchTab('bedrock')">Bedrock Edition</button>
+      </div>
+
+      <!-- Java Edition -->
+      <div id="java" class="tab-content active">
+        <h2>Java Edition Installation</h2>
+        
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Install Fabric</h3>
+              <p>Download and install Fabric from <a href="https://fabricmc.net/" target="_blank">fabricmc.net</a></p>
+              <ul>
+                <li>Download the Fabric installer</li>
+                <li>Run the installer</li>
+                <li>Select your Minecraft version (1.20+)</li>
+                <li>Click "Install"</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Download Camera Mod</h3>
+              <p>Get the latest Camera Mod JAR file from our downloads page or GitHub releases.</p>
+              <ul>
+                <li>Visit the <a href="/download">Download</a> page</li>
+                <li>Download the Camera Mod JAR for Java Edition</li>
+                <li>Save the file for the next step</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Install the Mod</h3>
+              <p>Place the mod file in your Fabric mods folder.</p>
+              <div class="code-block">
+<pre>Windows: %appdata%/.minecraft/mods/
+Mac: ~/Library/Application Support/minecraft/mods/
+Linux: ~/.minecraft/mods/</pre>
+              </div>
+              <ul>
+                <li>Locate your .minecraft folder</li>
+                <li>Create a "mods" folder if it doesn't exist</li>
+                <li>Paste the Camera Mod JAR file</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Launch & Enjoy</h3>
+              <p>Start Minecraft with Fabric and the mod will be ready to use.</p>
+              <ul>
+                <li>Launch Minecraft</li>
+                <li>Select the Fabric profile</li>
+                <li>Verify the mod loaded (check mods list)</li>
+                <li>Open a world and start creating!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bedrock Edition -->
+      <div id="bedrock" class="tab-content">
+        <h2>Bedrock Edition Installation</h2>
+        
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Download the Addon</h3>
+              <p>Get the Camera Mod addon package from the Downloads page.</p>
+              <ul>
+                <li>Visit the <a href="/download">Download</a> page</li>
+                <li>Download the Bedrock Edition addon (.mcaddon)</li>
+                <li>Save the file to a convenient location</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Install the Addon</h3>
+              <p>Double-click the .mcaddon file to install.</p>
+              <ul>
+                <li>Locate the downloaded .mcaddon file</li>
+                <li>Double-click to open it</li>
+                <li>Minecraft will import it automatically</li>
+                <li>Confirm the installation when prompted</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Enable in World</h3>
+              <p>Activate the addon when creating or opening a world.</p>
+              <ul>
+                <li>Create a new world or open an existing one</li>
+                <li>Go to "World Settings"</li>
+                <li>Find "Camera Mod" in Behavior and Resource Packs</li>
+                <li>Toggle it ON</li>
+                <li>Apply and play!</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Access the Mod</h3>
+              <p>Use the in-game menu to access camera controls.</p>
+              <ul>
+                <li>Press the camera menu hotkey (configurable)</li>
+                <li>Select your preferred preset</li>
+                <li>Enjoy cinematography!</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Troubleshooting -->
+      <div class="troubleshooting">
+        <h2>Troubleshooting</h2>
+        
+        <div class="faq">
+          <details>
+            <summary>Mod doesn't appear in my mods list</summary>
+            <p>Make sure you're using a compatible Minecraft version (1.20+) and that Fabric is properly installed. Try restarting Minecraft.</p>
+          </details>
+
+          <details>
+            <summary>Performance is low after installing</summary>
+            <p>The Camera Mod is optimized for performance. If you experience lag, check that you don't have conflicting mods. Try disabling other mods temporarily.</p>
+          </details>
+
+          <details>
+            <summary>I get an error when starting Minecraft</summary>
+            <p>Check that all dependencies are installed correctly. For Java Edition, ensure you have Fabric Loader installed. Consult our GitHub issues for specific errors.</p>
+          </details>
+
+          <details>
+            <summary>Camera hotkeys don't work</summary>
+            <p>Hotkeys might be bound to different keys. Check the keybindings in the mod settings menu or try rebinding them.</p>
+          </details>
+        </div>
+      </div>
+
+      <!-- Need Help -->
+      <div class="help-box">
+        <h3>Need Help?</h3>
+        <p>If you run into issues or have questions not covered here, reach out to our community:</p>
+        <ul>
+          <li><a href="#">📖 Full Documentation</a></li>
+          <li><a href="#">💬 Discord Server</a></li>
+          <li><a href="#">🐛 GitHub Issues</a></li>
+          <li><a href="#">📧 Email Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .installation-section {
+      padding: var(--spacing-3xl) var(--spacing-md);
+    }
+
+    .installation-section h1 {
+      text-align: center;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 1.125rem;
+      color: #64748b;
+      margin-bottom: var(--spacing-2xl);
+    }
+
+    .edition-tabs {
+      display: flex;
+      gap: var(--spacing-md);
+      margin-bottom: var(--spacing-2xl);
+      border-bottom: 2px solid var(--color-border);
+    }
+
+    .tab-button {
+      padding: var(--spacing-md) var(--spacing-lg);
+      border: none;
+      background: none;
+      cursor: pointer;
+      color: #64748b;
+      font-weight: 600;
+      border-bottom: 3px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .tab-button.active {
+      color: var(--color-primary);
+      border-bottom-color: var(--color-primary);
+    }
+
+    .tab-button:hover {
+      color: var(--color-primary);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .tab-content h2 {
+      margin-bottom: var(--spacing-2xl);
+      color: var(--color-primary);
+    }
+
+    .steps {
+      display: grid;
+      gap: var(--spacing-2xl);
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: var(--spacing-xl);
+      padding: var(--spacing-xl);
+      background: white;
+      border-radius: 0.75rem;
+      border-left: 4px solid var(--color-primary);
+    }
+
+    .step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+      color: white;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+
+    .step-content h3 {
+      color: var(--color-primary);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .step-content p {
+      margin-bottom: var(--spacing-md);
+      color: #475569;
+    }
+
+    .step-content ul {
+      list-style: none;
+      margin-left: 0;
+    }
+
+    .step-content ul li {
+      padding-left: var(--spacing-lg);
+      position: relative;
+      margin-bottom: var(--spacing-sm);
+      color: #64748b;
+    }
+
+    .step-content ul li:before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      color: var(--color-secondary);
+      font-weight: 700;
+    }
+
+    .code-block {
+      background: #f1f5f9;
+      padding: var(--spacing-lg);
+      border-radius: 0.5rem;
+      margin: var(--spacing-lg) 0;
+      font-family: 'Courier New', monospace;
+      overflow-x: auto;
+    }
+
+    .troubleshooting {
+      margin-top: var(--spacing-3xl);
+      padding: var(--spacing-2xl);
+      background: #f8fafc;
+      border-radius: 0.75rem;
+    }
+
+    .troubleshooting h2 {
+      margin-bottom: var(--spacing-xl);
+      color: var(--color-primary);
+    }
+
+    .faq {
+      display: grid;
+      gap: var(--spacing-md);
+    }
+
+    details {
+      padding: var(--spacing-md);
+      background: white;
+      border: 1px solid var(--color-border);
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+
+    summary {
+      font-weight: 600;
+      color: var(--color-primary);
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    summary:before {
+      content: "▶ ";
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+
+    details[open] summary:before {
+      transform: rotate(90deg);
+    }
+
+    details p {
+      margin-top: var(--spacing-md);
+      color: #475569;
+    }
+
+    .help-box {
+      margin-top: var(--spacing-3xl);
+      padding: var(--spacing-2xl);
+      background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
+      color: white;
+      border-radius: 0.75rem;
+    }
+
+    .help-box h3 {
+      color: white;
+      margin-bottom: var(--spacing-md);
+    }
+
+    .help-box ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-md);
+    }
+
+    .help-box a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .step {
+        grid-template-columns: 1fr;
+      }
+
+      .step-number {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+
+  <script>
+    function switchTab(tabName) {
+      // Hide all tabs
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+
+      // Remove active class from all buttons
+      const buttons = document.querySelectorAll('.tab-button');
+      buttons.forEach(btn => btn.classList.remove('active'));
+
+      // Show selected tab
+      const selectedTab = document.getElementById(tabName);
+      if (selectedTab) {
+        selectedTab.classList.add('active');
+      }
+
+      // Add active class to clicked button
+      event.target.classList.add('active');
+    }
+  </script>
+</Layout>

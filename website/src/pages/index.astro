@@ -1,0 +1,227 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Home" description="Professional camera controls for Minecraft">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-content">
+      <h1>Minecraft Camera Mod</h1>
+      <p class="hero-subtitle">Professional-grade camera controls for stunning cinematography</p>
+      <div class="hero-buttons">
+        <a href="/download" class="btn btn-primary">Download Now</a>
+        <a href="/features" class="btn btn-secondary">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Preview -->
+  <section class="features-preview">
+    <div class="container">
+      <h2>Why Choose Camera Mod?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🎬</div>
+          <h3>Professional Controls</h3>
+          <p>Cinematic camera movements with smooth transitions and precise control.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚙️</div>
+          <h3>Optimization</h3>
+          <p>Performance-optimized for smooth gameplay without compromising graphics.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Privacy Focused</h3>
+          <p>Your data stays yours. No telemetry, no tracking, fully open source.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎨</div>
+          <h3>Camera Presets</h3>
+          <p>Pre-configured camera angles for different scenarios and cinematography styles.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stat-item">
+        <h3>5+</h3>
+        <p>Camera Presets</p>
+      </div>
+      <div class="stat-item">
+        <h3>2</h3>
+        <p>Editions Supported</p>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Open Source</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="container cta-content">
+      <h2>Ready to Enhance Your Minecraft Experience?</h2>
+      <p>Get started with the Camera Mod today. Works on both Java and Bedrock editions.</p>
+      <a href="/installation" class="btn btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <style>
+    .hero {
+      background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+      color: white;
+      padding: 8rem var(--spacing-md) 6rem;
+      text-align: center;
+    }
+
+    .hero-content h1 {
+      font-size: 3.5rem;
+      margin-bottom: var(--spacing-md);
+      color: white;
+    }
+
+    .hero-subtitle {
+      font-size: 1.5rem;
+      margin-bottom: var(--spacing-2xl);
+      opacity: 0.95;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: var(--spacing-lg);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: var(--spacing-md) var(--spacing-2xl);
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background-color: white;
+      color: var(--color-primary);
+    }
+
+    .btn-primary:hover {
+      background-color: #f1f5f9;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .btn-secondary:hover {
+      background-color: white;
+      color: var(--color-primary);
+      transform: translateY(-2px);
+    }
+
+    .features-preview {
+      padding: var(--spacing-3xl) var(--spacing-md);
+      background-color: white;
+    }
+
+    .features-preview h2 {
+      text-align: center;
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: var(--spacing-2xl);
+    }
+
+    .feature-card {
+      padding: var(--spacing-2xl);
+      border: 1px solid var(--color-border);
+      border-radius: 0.75rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-color: var(--color-primary);
+    }
+
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: var(--spacing-md);
+    }
+
+    .feature-card h3 {
+      margin-bottom: var(--spacing-md);
+      color: var(--color-primary);
+    }
+
+    .stats {
+      background-color: var(--color-dark);
+      color: white;
+      padding: var(--spacing-3xl) var(--spacing-md);
+    }
+
+    .stats .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: var(--spacing-2xl);
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      color: var(--color-secondary);
+      font-size: 2.5rem;
+      margin-bottom: var(--spacing-md);
+    }
+
+    .cta {
+      background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
+      color: white;
+      padding: var(--spacing-3xl) var(--spacing-md);
+      text-align: center;
+    }
+
+    .cta-content h2 {
+      color: white;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .cta-content p {
+      font-size: 1.125rem;
+      margin-bottom: var(--spacing-2xl);
+      opacity: 0.95;
+    }
+
+    @media (max-width: 768px) {
+      .hero-content h1 {
+        font-size: 2rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.125rem;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+</Layout>

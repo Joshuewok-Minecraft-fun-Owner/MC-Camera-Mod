@@ -1,0 +1,513 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Documentation" description="Complete documentation and API reference for the Camera Mod">
+  <section class="docs-section">
+    <div class="container">
+      <h1>Documentation</h1>
+      <p class="intro-text">Comprehensive guide to using and developing with the Camera Mod.</p>
+
+      <div class="docs-grid">
+        <!-- Quick Start -->
+        <div class="doc-card">
+          <h2>🚀 Quick Start</h2>
+          <p>Get up and running with the Camera Mod in 5 minutes.</p>
+          <ul>
+            <li>Basic camera controls</li>
+            <li>Using presets</li>
+            <li>First recording</li>
+          </ul>
+          <a href="#quick-start" class="doc-link">Read Guide →</a>
+        </div>
+
+        <!-- Camera Controls -->
+        <div class="doc-card">
+          <h2>⌨️ Camera Controls</h2>
+          <p>Learn all the keybindings and control options available.</p>
+          <ul>
+            <li>Movement controls</li>
+            <li>Preset selection</li>
+            <li>Parameter adjustment</li>
+          </ul>
+          <a href="#controls" class="doc-link">Read Guide →</a>
+        </div>
+
+        <!-- Presets Guide -->
+        <div class="doc-card">
+          <h2>📐 Camera Presets</h2>
+          <p>Explore all available camera presets and when to use them.</p>
+          <ul>
+            <li>Static preset</li>
+            <li>Cinematic preset</li>
+            <li>Orbit preset</li>
+          </ul>
+          <a href="#presets" class="doc-link">Read Guide →</a>
+        </div>
+
+        <!-- Configuration -->
+        <div class="doc-card">
+          <h2>⚙️ Configuration</h2>
+          <p>Customize the mod to your preferences.</p>
+          <ul>
+            <li>Config file location</li>
+            <li>Settings reference</li>
+            <li>Custom keybinds</li>
+          </ul>
+          <a href="#config" class="doc-link">Read Guide →</a>
+        </div>
+
+        <!-- API Reference -->
+        <div class="doc-card">
+          <h2>🔌 API Reference</h2>
+          <p>For developers: integrate Camera Mod with your mods.</p>
+          <ul>
+            <li>Camera events</li>
+            <li>Code examples</li>
+            <li>Integration guide</li>
+          </ul>
+          <a href="#api" class="doc-link">Read Guide →</a>
+        </div>
+
+        <!-- Troubleshooting -->
+        <div class="doc-card">
+          <h2>🐛 Troubleshooting</h2>
+          <p>Common issues and how to fix them.</p>
+          <ul>
+            <li>Performance issues</li>
+            <li>Compatibility problems</li>
+            <li>Configuration help</li>
+          </ul>
+          <a href="#troubleshooting" class="doc-link">Read Guide →</a>
+        </div>
+      </div>
+
+      <!-- Detailed Sections -->
+      <div class="docs-content">
+        
+        <!-- Quick Start -->
+        <section id="quick-start" class="doc-section">
+          <h2>🚀 Quick Start Guide</h2>
+          
+          <h3>Basic Setup</h3>
+          <p>After installing the mod, you're ready to use it immediately:</p>
+          <ol>
+            <li>Open a Minecraft world</li>
+            <li>Press <code>C</code> to open the Camera Menu</li>
+            <li>Select a preset (e.g., "Cinematic")</li>
+            <li>Use arrow keys to move the camera</li>
+            <li>Press <code>Space</code> to start recording (if using recording software)</li>
+          </ol>
+
+          <h3>Your First Shot</h3>
+          <pre><code>// Basic camera movement
+Left/Right Arrows  - Rotate horizontally
+Up/Down Arrows     - Rotate vertically
+WASD               - Move position
+Shift + Move       - Fast movement
+Space              - Lock/unlock camera</code></pre>
+        </section>
+
+        <!-- Controls -->
+        <section id="controls" class="doc-section">
+          <h2>⌨️ Camera Controls Reference</h2>
+          
+          <h3>Primary Controls</h3>
+          <table class="controls-table">
+            <thead>
+              <tr>
+                <th>Key</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>C</code></td>
+                <td>Open/Close Camera Menu</td>
+              </tr>
+              <tr>
+                <td><code>↑ ↓ ← →</code></td>
+                <td>Rotate camera view</td>
+              </tr>
+              <tr>
+                <td><code>W A S D</code></td>
+                <td>Move camera position</td>
+              </tr>
+              <tr>
+                <td><code>Shift + Move</code></td>
+                <td>Faster movement (3x speed)</td>
+              </tr>
+              <tr>
+                <td><code>Space</code></td>
+                <td>Toggle camera lock</td>
+              </tr>
+              <tr>
+                <td><code>1-5</code></td>
+                <td>Quick select preset</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Presets -->
+        <section id="presets" class="doc-section">
+          <h2>📐 Camera Presets</h2>
+          
+          <h3>Available Presets</h3>
+          
+          <div class="preset-item">
+            <h4>Static</h4>
+            <p>A fixed camera position. Perfect for establishing shots and showcasing your builds from a specific angle.</p>
+            <p><strong>Best for:</strong> Building showcases, cinematic cutscenes, wide landscape shots</p>
+          </div>
+
+          <div class="preset-item">
+            <h4>Cinematic</h4>
+            <p>Smooth tracking movements with professional easing. Great for following action or panning across scenes.</p>
+            <p><strong>Best for:</strong> Gameplay footage, trailers, smooth transitions, action sequences</p>
+          </div>
+
+          <div class="preset-item">
+            <h4>Orbit</h4>
+            <p>The camera orbits around a point of interest. Ideal for 360° showcases and dynamic angles.</p>
+            <p><strong>Best for:</strong> Building showcases, item displays, 360° rotations, dramatic reveals</p>
+          </div>
+
+          <div class="preset-item">
+            <h4>Side Profile</h4>
+            <p>Fixed side view for showcasing the profile of your builds.</p>
+            <p><strong>Best for:</strong> Architecture showcases, side-view builds, structure demonstrations</p>
+          </div>
+
+          <div class="preset-item">
+            <h4>Top-Down</h4>
+            <p>Overhead perspective for bird's eye view. Perfect for showing layouts and planning.</p>
+            <p><strong>Best for:</strong> Base layouts, town planning, aerial photography, map overviews</p>
+          </div>
+        </section>
+
+        <!-- Configuration -->
+        <section id="config" class="doc-section">
+          <h2>⚙️ Configuration</h2>
+          
+          <h3>Config File Location</h3>
+          <div class="code-block">
+<pre>Windows: %appdata%/.minecraft/config/cameramod.json
+Mac: ~/Library/Application Support/minecraft/config/cameramod.json
+Linux: ~/.minecraft/config/cameramod.json</pre>
+          </div>
+
+          <h3>Configuration Options</h3>
+          <pre><code>{
+  "camera": {
+    "moveSpeed": 1.0,      // Camera movement speed multiplier
+    "rotateSpeed": 1.0,    // Rotation speed multiplier
+    "smoothing": 0.8,      // Movement smoothing (0-1)
+    "fov": 90              // Field of view
+  },
+  "controls": {
+    "menuKey": "C",
+    "fastMoveModifier": "SHIFT"
+  },
+  "features": {
+    "enableOptimization": true,
+    "enablePrivacyMode": true
+  }
+}</code></pre>
+        </section>
+
+        <!-- API -->
+        <section id="api" class="doc-section">
+          <h2>🔌 Developer API</h2>
+          
+          <h3>Listening to Camera Events (Java)</h3>
+          <pre><code>import net.creatortools.camera.CameraEvent;
+import net.fabricmc.fabric.api.event.Event;
+
+Event.listen(CameraEvent.MOVE, (camera) → {
+  // Called when camera moves
+});
+
+Event.listen(CameraEvent.PRESET_CHANGED, (preset) → {
+  // Called when preset changes
+});</code></pre>
+
+          <h3>Getting Camera State (Java)</h3>
+          <pre><code>import net.creatortools.camera.CameraManager;
+
+CameraManager manager = CameraManager.getInstance();
+Vec3d position = manager.getPosition();
+Quaternion rotation = manager.getRotation();
+String currentPreset = manager.getCurrentPreset();</code></pre>
+        </section>
+
+        <!-- Troubleshooting -->
+        <section id="troubleshooting" class="doc-section">
+          <h2>🐛 Troubleshooting</h2>
+          
+          <h3>Common Issues</h3>
+          
+          <div class="faq-item">
+            <h4>Camera menu won't open</h4>
+            <p>Make sure your hotkey isn't bound to another mod or game action. Check your configuration file and try rebinding. Alternatively, use the alternative hotkey.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>Mod causes lag</h4>
+            <p>Try disabling the optimization features or reducing camera update frequency. The mod is lightweight but may conflict with other rendering mods.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>Presets behave differently than expected</h4>
+            <p>Check your camera settings. Some presets have different behavior based on configuration values like moveSpeed and smoothing.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>Camera is shaking or jittering</h4>
+            <p>Increase the smoothing value in your configuration. Also check that you don't have conflicting camera mods installed.</p>
+          </div>
+        </section>
+      </div>
+
+      <!-- Need More Help -->
+      <div class="help-section">
+        <h3>Still need help?</h3>
+        <p>Check out our community resources or report an issue on GitHub.</p>
+        <div class="help-links">
+          <a href="#">GitHub Repository</a>
+          <a href="#">Discord Community</a>
+          <a href="#">Issue Tracker</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    .docs-section {
+      padding: var(--spacing-3xl) var(--spacing-md);
+    }
+
+    .docs-section h1 {
+      text-align: center;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .intro-text {
+      text-align: center;
+      font-size: 1.125rem;
+      color: #64748b;
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .docs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--spacing-xl);
+      margin-bottom: var(--spacing-3xl);
+    }
+
+    .doc-card {
+      padding: var(--spacing-xl);
+      background: white;
+      border: 1px solid var(--color-border);
+      border-radius: 0.75rem;
+      transition: all 0.3s ease;
+    }
+
+    .doc-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-color: var(--color-primary);
+    }
+
+    .doc-card h2 {
+      margin-bottom: var(--spacing-md);
+      color: var(--color-primary);
+      font-size: 1.25rem;
+    }
+
+    .doc-card p {
+      color: #64748b;
+      margin-bottom: var(--spacing-md);
+      font-size: 0.95rem;
+    }
+
+    .doc-card ul {
+      list-style: none;
+      margin-bottom: var(--spacing-lg);
+    }
+
+    .doc-card ul li {
+      padding-left: var(--spacing-lg);
+      position: relative;
+      color: #64748b;
+      margin-bottom: var(--spacing-sm);
+      font-size: 0.9rem;
+    }
+
+    .doc-card ul li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--color-secondary);
+    }
+
+    .doc-link {
+      display: inline-block;
+      color: var(--color-primary);
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .doc-link:hover {
+      color: var(--color-secondary);
+    }
+
+    .docs-content {
+      margin: var(--spacing-3xl) 0;
+    }
+
+    .doc-section {
+      margin-bottom: var(--spacing-3xl);
+      padding: var(--spacing-2xl);
+      background: white;
+      border-radius: 0.75rem;
+      border-left: 4px solid var(--color-primary);
+    }
+
+    .doc-section h2 {
+      color: var(--color-primary);
+      margin-bottom: var(--spacing-xl);
+    }
+
+    .doc-section h3 {
+      color: var(--color-primary);
+      margin-top: var(--spacing-xl);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .doc-section h4 {
+      color: var(--color-dark);
+      margin-top: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .doc-section p {
+      color: #475569;
+    }
+
+    .doc-section ol, .doc-section ul {
+      margin-left: var(--spacing-lg);
+      margin-bottom: var(--spacing-md);
+    }
+
+    .doc-section li {
+      margin-bottom: var(--spacing-sm);
+      color: #475569;
+    }
+
+    .code-block {
+      background: #f1f5f9;
+      padding: var(--spacing-lg);
+      border-radius: 0.5rem;
+      margin: var(--spacing-lg) 0;
+      overflow-x: auto;
+    }
+
+    .controls-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: var(--spacing-lg) 0;
+    }
+
+    .controls-table thead {
+      background: #f1f5f9;
+    }
+
+    .controls-table th,
+    .controls-table td {
+      padding: var(--spacing-md);
+      text-align: left;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .controls-table code {
+      background: white;
+      border: 1px solid #e2e8f0;
+    }
+
+    .preset-item {
+      margin: var(--spacing-lg) 0;
+      padding: var(--spacing-lg);
+      background: #f8fafc;
+      border-radius: 0.5rem;
+    }
+
+    .preset-item h4 {
+      color: var(--color-primary);
+    }
+
+    .faq-item {
+      margin: var(--spacing-lg) 0;
+    }
+
+    .faq-item h4 {
+      color: var(--color-secondary);
+    }
+
+    .help-section {
+      text-align: center;
+      padding: var(--spacing-2xl);
+      background: linear-gradient(135deg, var(--color-accent) 0%, var(--color-primary) 100%);
+      color: white;
+      border-radius: 0.75rem;
+      margin-top: var(--spacing-3xl);
+    }
+
+    .help-section h3 {
+      color: white;
+      margin-bottom: var(--spacing-md);
+    }
+
+    .help-links {
+      display: flex;
+      gap: var(--spacing-lg);
+      justify-content: center;
+      margin-top: var(--spacing-lg);
+      flex-wrap: wrap;
+    }
+
+    .help-links a {
+      display: inline-block;
+      padding: var(--spacing-md) var(--spacing-xl);
+      background: white;
+      color: var(--color-primary);
+      border-radius: 0.375rem;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .help-links a:hover {
+      background: #f1f5f9;
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .docs-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .controls-table {
+        font-size: 0.875rem;
+      }
+
+      .help-links {
+        flex-direction: column;
+      }
+
+      .help-links a {
+        width: 100%;
+      }
+    }
+  </style>
+</Layout>

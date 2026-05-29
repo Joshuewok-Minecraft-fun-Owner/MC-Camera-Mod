@@ -1,0 +1,158 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title} | Minecraft Camera Mod</title>
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container navbar-container">
+        <a href="/" class="logo">📷 Camera Mod</a>
+        <ul class="nav-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/features">Features</a></li>
+          <li><a href="/installation">Installation</a></li>
+          <li><a href="/docs">Documentation</a></li>
+          <li><a href="/download">Download</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Minecraft Camera Mod</h4>
+            <p>Professional-grade camera controls for Minecraft</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="/features">Features</a></li>
+              <li><a href="/docs">Docs</a></li>
+              <li><a href="/download">Download</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Community</h4>
+            <ul>
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Minecraft Fun! All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <style is:global>
+      @import '../styles/global.css';
+      
+      .navbar {
+        background-color: white;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+
+      .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: var(--spacing-md) 0;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--color-primary);
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: var(--spacing-xl);
+      }
+
+      .nav-links a {
+        color: var(--color-dark);
+        transition: color 0.2s ease;
+      }
+
+      .nav-links a:hover {
+        color: var(--color-primary);
+      }
+
+      .footer {
+        background-color: var(--color-dark);
+        color: #e2e8f0;
+        padding: var(--spacing-3xl) var(--spacing-md);
+        margin-top: var(--spacing-3xl);
+      }
+
+      .footer-content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--spacing-2xl);
+        margin-bottom: var(--spacing-2xl);
+      }
+
+      .footer-section h4 {
+        color: white;
+        margin-bottom: var(--spacing-md);
+      }
+
+      .footer-section ul {
+        list-style: none;
+      }
+
+      .footer-section ul li {
+        margin-bottom: var(--spacing-sm);
+      }
+
+      .footer-section a {
+        color: #cbd5e1;
+        transition: color 0.2s ease;
+      }
+
+      .footer-section a:hover {
+        color: var(--color-secondary);
+      }
+
+      .footer-bottom {
+        border-top: 1px solid #334155;
+        padding-top: var(--spacing-xl);
+        text-align: center;
+        color: #94a3b8;
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          gap: var(--spacing-md);
+          font-size: 0.875rem;
+        }
+      }
+    </style>
+  </body>
+</html>
